@@ -1,0 +1,29 @@
+{
+  "name": "mern_shopping_list",
+  "version": "1.0.0",
+  "description": "Shopping list built with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Tanvi Narsapur",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "downloadjs": "^1.4.7",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.11",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
